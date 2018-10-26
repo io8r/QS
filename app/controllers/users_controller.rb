@@ -14,6 +14,7 @@ class UsersController < ApplicationController
 
   def show
   	@user = User.find(params[:id])
+  	@microposts = @user.microposts.paginate(page: params[:page])
   	redirect_to users_url and flash[:info] = "No such user yet" and return unless @user.activated 	
   end
 

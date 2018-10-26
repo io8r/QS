@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+orange:
+  content: "MyText"
+  created_at: <%= 10.minutes.ago %>
+  user: Example
+
+tau_manifesto:
+  content: "MyText @tauday site by @mhartl: http://tauday.com"
+  created_at: <%= 3.years.ago %>
+  user: Example
+
+cat_video:
+  content: "http://youtu.be/PKffm2uI4dk"
+  created_at: <%= 2.hours.ago %>
+  user: Archer2
+
+most_recent:
+  content: "Recent text"
+  created_at: <%= Time.zone.now %>
+  user: Example
+
+<% 30.times do |n| %>
+micropost_<%= n %>:
+  content: <%= Faker::Lorem.sentence(5) %>
+  created_at: <%= 42.days.ago %>
+  user: Example
+<% end %>
+  
