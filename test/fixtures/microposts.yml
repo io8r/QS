@@ -1,5 +1,25 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+ants:
+  content: "MyText"
+  created_at: <%= 2.years.ago %>
+  user: Archer
+
+zone:
+  content: "MyText"
+  created_at: <%= 3.days.ago %>
+  user: Archer
+
+tone:
+  content: "MyText"
+  created_at: <%= 10.minutes.ago %>
+  user: Lana
+
+van:
+  content: "MyText"
+  created_at: <%= 4.hours.ago %>
+  user: Lana
+
 orange:
   content: "MyText"
   created_at: <%= 10.minutes.ago %>
@@ -7,8 +27,8 @@ orange:
 
 tau_manifesto:
   content: "MyText @tauday site by @mhartl: http://tauday.com"
-  created_at: <%= 3.years.ago %>
-  user: Example
+  created_at: <%= 1.years.ago %>
+  user: Malory
 
 cat_video:
   content: "http://youtu.be/PKffm2uI4dk"

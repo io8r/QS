@@ -1,6 +1,5 @@
 module ApplicationHelper
-
-	#displays a page title
+	
 	def full_title(page_title = '')
 		
 		base_title = "RoR"
